@@ -1,0 +1,137 @@
+:root {
+    --verdeoscuro: #658864;
+    --verde: #B7B78A;
+    --grisoscuro: #DDDDDD;
+    --gris: #EEEEEE;
+
+    --fuente: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--verdeoscuro);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--gris);
+    font-family: var(--fuente);
+}
+
+h1 { font-size: 40px; }
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 24px; }
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 30px 0;
+}
+
+.menu {
+    background-color: var(--verde);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu__enlace {
+    font-family: var(--fuente);
+    color: var(--gris);
+    font-size: 30px;
+}
+
+.menu__enlace--activo, .menu__enlace:hover {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto {
+    background-color: var(--gris);
+    padding: 10px;
+
+}
+
+.p_imagen {
+    width: 100%;
+}
+
+.p_info {
+
+}
+
+.p_nombre {
+    font-size: 40px;
+    color: var(--verde);
+}
+
+.p_precio {
+    font-size: 28px;
+    color: var(--verdeoscuro);
+}
+
+.p_nombre, .p_precio {
+    font-family: var(--fuente);
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.footer {
+    color: var(--grisoscuro);
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer__info {
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: 22px;
+    background-color: var(--verde);
+}
+
