@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!-- CSS Style  -->
-    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="CSS/producto.css">
     <title> Cloting Store 👗 </title>
 </head>
 <body>
     <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="Images/logo.png" alt="Logotipo">
+            <img class="header__logo" src="Images/logo2.png" alt="Logotipo" style="max-width: 150px;">
         </a>
     </header>
 
@@ -27,7 +27,30 @@
     </nav>
 
     <main class="container">
-    <h1> Producto </h1>
+    <h1> React JS </h1>
+
+    <div class="camisa">
+        <img src="Images/3.jpg" alt="Camisa">
+        <div class="camisa-info">
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book
+            </p>
+
+            <form class="formulario">
+                <select class="formulario-campo">
+                    <option disabled selected>-- Seleccionar Talla --</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <input class="formulario-campo" type="number" placeholder="Cantidad" min="1">
+                <input class="formulario-submit" type="submit" value="Agregar al Carrito">
+            </form>
+
+        </div>
+    </div>
     </main>
 
     <footer class="footer">
